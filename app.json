@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Invent-GoApp",
+    "slug": "Invent-GoApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logoP.png",
+    "scheme": "invent-goapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/icon-foreground.png",
+        "backgroundImage": "./assets/images/icon-foreground.png",
+        "monochromeImage": "./assets/images/icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.danpf3110.InventGoApp"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/web.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b85628da-11d0-43b9-86a8-a3b58aa560fe"
+      }
+    }
+  }
+}
