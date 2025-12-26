@@ -1,12 +1,12 @@
-// app/utils/AuthProvider.js
+// /utils/AuthProvider.js (fuera de app/)
 import {
   createUserWithEmailAndPassword,
   signOut as firebaseSignOut,
   onAuthStateChanged,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import React, { createContext, useContext, useEffect, useState } from "react";
-import { auth } from "../../firebase";
+import { createContext, useContext, useEffect, useState } from "react";
+import { auth } from "../firebase"; // Cambiado de "../../firebase" a "../firebase"
 
 const AuthContext = createContext();
 
@@ -42,3 +42,6 @@ export function AuthProvider({ children }) {
 export function useAuth() {
   return useContext(AuthContext);
 }
+
+// Exportación por defecto para compatibilidad
+export default AuthProvider;

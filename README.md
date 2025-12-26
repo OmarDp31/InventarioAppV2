@@ -1,50 +1,36 @@
-# Welcome to your Expo app 👋
+# Welcome
+ Invent-Go
+Aplicación móvil (Android/iOS) y web de control de salida/ventas y  gestión de inventario desarrollada como proyecto académico para la materia Diseño de Sistemas.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Permite registrar productos, consultar el inventario, buscar por criterios avanzados, generar reportes y exportar información en PDF, todo con un sistema de autenticación multiusuario robusto basado en Firebase.
 
-## Get started
+Autor
+Nombre: Omar Daniel Pérez
+Proyecto: Trabajo académico (Materia Diseño de Sistemas)
+GitHub: @OmarDp31
 
-1. Install dependencies
+Objetivo y Descripción del proyecto
+El objetivo principal fue diseñar e implementar una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) funcional que permitiera gestionar inventarios de forma sencilla y eficiente, enfocándose en los siguientes puntos clave:
+Módulo de Ventas: Registro de transacciones con actualización automática de stock.
+Autenticación Segura: Implementación de Login y Registro de usuarios (Firebase Auth).
+Aislamiento de Datos: Separación estricta de la información por usuario (cada usuario solo ve su inventario).
+Reportes: Capacidad de exportar el inventario en formato PDF, sus otras exportaciones siguen en desarrollo.
+Multiplataforma: Funcionamiento en Expo Go (Móvil) y Web.
 
-   ```bash
-   npm install
-   ```
+## Tecnologías Utilizadas
+Frontend: React Native con Expo (ES6+).
+Backend: Firebase (Firestore & Authentication).
+Navegación: Expo Router.
+Utilidades: Expo Print & Sharing (PDF).
 
-2. Start the app
+## Instalación y Ejecución
+Clonar e Instalar:
+git clone https://github.com/OmarDp31/Invent-Go-app.git
+cd Invent-Go-app
+npm install
+npx expo start
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Estado del Proyecto
+Módulo de Inventario: 100% Funcional.
+Módulo de Ventas: Operativo (Registro y descuento de stock).
+Reportes PDF: Disponibles para móviles un 60% y en la web sigue en desarrollo.
