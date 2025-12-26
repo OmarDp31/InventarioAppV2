@@ -25,7 +25,7 @@ Utilidades: Expo Print & Sharing (PDF).
 
 ## Instalación y Ejecución
 Clonar e Instalar:
-git clone https://github.com/OmarDp31/Invent-Go-app.git
+git clone https://github.com/OmarDp31/InventarioAppV2.git
 cd Invent-Go-app
 npm install
 npx expo start
